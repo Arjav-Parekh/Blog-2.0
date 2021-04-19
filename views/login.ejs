@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Daily Journal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div id="vantajs">
+    <div class="container" >
+        <div class="mid-con">
+            <div class="card">
+                <form class="form-signin" method="post" action="/signin">
+
+                   <center><i><h1 class="mb-3 " style="color:white;">Sign In</h1></i></center> 
+                   <br>
+                    <label for="inputEmail" class="sr-only">Email address</label>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" name="username">
+                    <br>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" name="password">
+                    <br>
+
+                  
+                      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                  
+                  <br>
+                  <center><p class="mt-5 mb-3 text-muted">Don't have an account? <a href="/signup" style="color: #06faa9;">Sign up</a></p>
+                    <!-- <button type="button" class="btn btn-dark btn-md download-button"><i class="fab fa-apple"></i> App Store</button>
+                    <button type="button" class="btn play btn-dark btn-md download-button"><i class="fab fa-google-play"></i> Google Play</button> -->
+                    <p class="mt-5 mb-3 text-muted">© Daily Journal 2021</p></center>
+                  
+                  </div>
+                  </form>
+            </div>
+
+        </div>
+    </div>
+
+  </div>
+
+    <div class="footer">
+      
+      <p>Made by Arjav Parekh & Aryan Ringshia</p>
+
+    </div>
+  
+  </div>
+  
+
+<%-include("partials/footer")-%>

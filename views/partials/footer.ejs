@@ -1,0 +1,87 @@
+
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js"></script>
+
+ <!--Scrolling Effect-->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+  AOS.init({
+
+      offset: 100, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 600, // values from 0 to 3000, with step 50ms
+     });
+ </script>
+
+<script>
+  VANTA.BIRDS({
+    el: "#vantajs",
+    mouseControls: false,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00
+  })
+  </script>
+
+
+
+  <script>
+
+  $('.slider').click(function(){
+    $('.home-h').toggleClass('home-h-light');
+    $('.home-h').toggleClass('home-h-dark');
+  });
+
+  $('.slider').click(function(){
+    $('body').toggleClass('dark-mode');
+  });
+  $('.slider').click(function(){
+    $('.navbar').toggleClass('bg-light');
+    $('.navbar').toggleClass('navbar-light');
+    $('.navbar').toggleClass('bg-dark');
+    $('.navbar').toggleClass('navbar-dark');
+  });
+  $('.slider').click(function(){
+    $('.bbs').toggleClass('blob');
+    $('.bbs').toggleClass('blob-dark');
+  });
+
+  $('.slider').click(function(){
+    $('.post-h').toggleClass('post-h-light');
+    $('.post-h').toggleClass('post-h-dark');
+  });
+
+  $('.slider').click(function(){
+    $('.news-h').style('color','white');
+  });
+
+ 
+ 
+text_val=$(".btntxt").val()
+
+  if (text_val!=1){
+    
+    $(".btntxt").removeAttr('disabled');
+
+  } 
+
+
+</script>
+
+
+
+
+  
+  
+</body>
+</html>

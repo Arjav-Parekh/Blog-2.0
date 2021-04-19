@@ -1,0 +1,50 @@
+<%-include("partials/header")-%>
+<br><br>
+<div class="container" style="height: 100%">
+<div class="blob bbs">
+
+  <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
+  <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
+  </svg>
+</div>
+
+<h1 style="color:rgb(15, 230, 158) ; text-shadow: 1px 1px 5px rgb(102, 102, 102); font-weight: 600;" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" >HELLO THERE!</h2>
+<br>
+<div  data-aos="fade-left" data-aos-delay="100" data-aos-duration="900" style="letter-spacing: 2px;">
+  <p>This is a blog website created by Arjav Parekh and Aryan Ringshia. Here latest blogs from the author are visible which are stored in a database and can be removed from the database directly.</p>
+<p> A News button is created which displays Latest news articles via GNews API. To support faster creation of webpages we have used Express.js.</p>
+<p>For database and creation multiple elements like navbar there is usage of MongoDB and Bootstrap respectively.</p>
+
+</div>
+<center>
+  <img src="images/design-thinking.png" alt="" width="fit-content" height="400px">
+</center>
+
+
+<%for(i=0;i<posts.length;i++){%>
+  <br>
+<h2 class="home-h home-h-light" style="letter-spacing: 1px;" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800"  ><%= posts[i].title %></h2>
+<br>
+<p  data-aos="fade-left" style="letter-spacing: 2px;" data-aos-delay="100" data-aos-duration="900"><%= posts[i].body.substring(0,200)+" ..."%>
+  <a href="/posts/<%=posts[i]._id%>" style="color: rgb(0, 102, 255);">Read more</a>
+</p>
+<br>
+<%}%>
+<br><br>
+
+<form class="" action="/news" method="post">
+  <button type="submit" name="button" class="btn btn-block" style="font-size: 20px;">Latest News</button>
+</form>
+<br><br>
+</div>
+<div class="footer-padding"></div>
+  <div class="footer">
+    
+    <p>Made by Arjav Parekh & Aryan Ringshia</p>
+    <br>
+    <form action="/login" method="GET"><button class="btn btn-primary " >LOGOUT</button></form>
+  </div>
+
+</div>
+
+<%-include("partials/footer")-%>

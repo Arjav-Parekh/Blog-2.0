@@ -1,0 +1,33 @@
+<%-include("partials/header")-%>
+<br><br>
+<div class="container" style="height: 100%">
+<h1>Compose</h1>
+<form class="" action="/compose" method="post">
+  <div class="form-group">
+    <label>Title</label><br>
+    <input type="text" class="form-control" name="newTitle" required><br>
+  </div>
+  <div class="form-group">
+    <label>Post</label><br>
+    <textarea name="bodyBlog" rows="6" class="form-control" required></textarea>
+  </div>
+  <div class="form-group">
+    <label>Add Image URL</label><br>
+    <input name="imgBlog" type="text" class="form-control"><br>
+  </div>
+
+  <button type="submit" name="button" id="buttontext" class="btn btn-primary btntxt" value="<%= buttonval %>" disabled ><%= buttontext %> </button>
+</form>
+</div>
+<div class="footer-padding"></div>
+  <div class="footer">
+    
+    <p>Made by Arjav Parekh & Aryan Ringshia</p>
+    <br>
+    <form action="/login" method="GET"><button class="btn btn-primary " >LOGOUT</button></form>
+  </div>
+
+</div>
+
+
+<%-include("partials/footer")-%>
